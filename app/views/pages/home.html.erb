@@ -1,13 +1,30 @@
 <div class="hero-unit">
 
-<h1>Welcome to the pet sitter directory!</h1> <br> <br>
+<h2>Welcome to Simply Pet Services!</h2>
 <p>
-	You've found the homepage for the 
-	<%= link_to "Pet Sitters Directory", "http://www.lodgeyourdog.com" %>
-	application!
+	We are simply the most beautiful and easy to use Pet Services directory around <br> <br>
+	
 </p>
-<p>
-	<%= link_to "Sign Up Now", "#", class: "btn btn-primary btn-large" %>
-</p>
-
+<p><!-- Button to trigger modal -->
+<a href="#myModal" role="button" class="btn btn-primary btn-large" data-toggle="modal">How it Works</a>
+ 
+<!-- Modal -->
+<div id="myModal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-header">
+    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+    <h3 id="myModalLabel">How we work</h3>
+  </div>
+  <div class="modal-body">
+    <p>We are pet sitters, and we believe that a good service should be promoted; simply and for free. <br><br>We believe we have created the best directory for pet services, so what are you waiting for, list your service for free today!</p> <br>
+  </div>
+  <div class="modal-footer">
+    <button class="btn" data-dismiss="modal" aria-hidden="true">Close</button>
+    <%= link_to "Join the Directory", new_user_registration_path, class: "btn btn-primary" %>
+  </div>
 </div>
+	
+	
+</p>
+</div>
+
+<!--<%= link_to "Sign Up Now", new_user_registration_path, class: "btn btn-primary btn-large" %>
