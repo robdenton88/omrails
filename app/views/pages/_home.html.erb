@@ -1,0 +1,15 @@
+<% if user_signed_in? %>
+
+<% else %>
+  <div class="hero-unit">
+  <h1>Welcome to Simply Pet Services!</h1>
+  <p>
+	We are simply the most beautiful and easy to use Pet Services directory around
+  </p>
+  <p>
+    <%= link_to "Sign Up Now", new_user_registration_path, class: "btn btn-primary btn-large" %>
+  </p>
+</div>
+<% end %>
+
+
